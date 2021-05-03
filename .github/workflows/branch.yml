@@ -8,5 +8,5 @@ jobs:
       - run: ls
       - run: jq -e ".a == 1" test.json
 
-      - run: jq -e ".b == 3" test.json
+      - run: jq -e ".b == 2" test.json
 
