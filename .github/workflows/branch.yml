@@ -6,4 +6,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: ls
-      - run: jq -e ".a == 1" $GITHUB_WORKSPACE/test.json
+      - run: jq -e ".a == 2" $GITHUB_WORKSPACE/test.json
+
