@@ -12,7 +12,7 @@ jobs:
         id: something
 
       - run: echo a
-        if: ${{ steps.something.a != '' }}
+        if: ${{ steps.something.outputs.a != '' }}
       - run: echo b
-        if: ${{ steps.something.b != '' }}
+        if: ${{ steps.something.outputs.b != '' }}
 
